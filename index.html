@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="./Israel shbahat protfolio/Comp-1.gif" alt="">
+        <nav>
+
+            <ul>
+                <li id="li_click"><a href="#warp_article">Bible</a></li>
+                <li id="li_click_2"><a href="#warp_article_second">Communication</a></li>
+                <li id="li_click_3"><a href="#warp_article_three">Others</a></li>
+                <li id="li_click_4" href><a href="#form_details">CONTECT US</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contain_all_images">
+            <div id="warp_article">
+                <h1> תורה</h1>
+                <article class="warp_images" id="warp_images">
+                    <button id="btn_right">></button>
+                    <a class="a_tag">
+                        <img class="images_one"  src="./Israel shbahat protfolio/כרזה_1.jpg" alt="">
+                        <span id ="span">Lorem ipsum dolor sit.
+                            Soluta eius tenetur aspernatur.
+                            Iste minima voluptas atque.
+                            Inventore rerum officia qui.</span>
+                    </a>
+                    <a class="a_tag">
+                        <img class="images_one" src="./Israel shbahat protfolio/מודעה.jpg" alt="">
+                        <span>Lorem ipsum dolor sit.
+                            Soluta eius tenetur aspernatur.
+                            Iste minima voluptas atque.
+                            Inventore rerum officia qui.</span>
+                    </a>
+                    <a class="a_tag">
+                        <img class="images_one" src="./Israel shbahat protfolio/בית_מדרש.jpg" alt="">
+                        <span>Lorem ipsum dolor sit.
+                            Soluta eius tenetur aspernatur.
+                            Iste minima voluptas atque.
+                            Inventore rerum officia qui.</span>
+                    </a>
+                    <a class="a_tag">
+                        <img class="images_one" src="./Israel shbahat protfolio/ספר_מאיר_בהיכלו.jpg" alt="">
+                        <span>Lorem ipsum dolor sit.
+                            Soluta eius tenetur aspernatur.
+                            Iste minima voluptas atque.
+                            Inventore rerum officia qui.</span>
+                    </a>
+                    <button id="btn_left"><</button>
+                </article>
+            </div>
+            <div id="warp_article_second">
+                <h1> תקשורת</h1>
+                <article class="warp_images_second" id="warp_images_second">
+                    <button id="btn_right_seconed">></button />
+                    <img class="images_two" src="./Israel shbahat protfolio/2_עבודות_בנושא_רשת_חברתית.jpg" alt="">
+                    <img class="images_two" src="./Israel shbahat protfolio/Free-iPhone-X-App-Screen-Mockup-PSD.jpg"
+                        alt="">
+                    <img class="images_two" src="./Israel shbahat protfolio/אוזן_שומעת_ספר_תצוגה.jpg" alt="">
+                    <img class="images_two" src="./Israel shbahat protfolio/אמנה3.jpg" alt="">
+                    <button id="btn_left_seconed">
+                        << /button>
+                </article>
+            </div>
+            <div id="warp_article_three">
+                <h1> אחרים</h1>
+                <article class="warp_images_three" id="warp_images_three">
+                    <button id="btn_right_three">></button>
+                    <img class="images_three" src="./Israel shbahat protfolio/העמק_הירוק.jpg" alt="">
+                    <img class="images_three" src="./Israel shbahat protfolio/כרזה2.jpg" alt="">
+                    <img class="images_three" src="./Israel shbahat protfolio/לוגו_כלי_נגינה1.jpg" alt="">
+                    <img class="images_three" src="./Israel shbahat protfolio/מסך_פתיח.jpg" alt="">
+                    <button id="btn_left_three">
+                        << /button>
+                </article>
+            </div>
+        </div>
+
+        <form class="form_details" id="form_details" action=" https://formspree.io/f/mvoygper" method="POST">
+            <h2>CONTECT US</h2>
+            <div class="contain_label_input">
+                <input type="hidden" name="_autoresponse" value="customer details">
+                <span>
+                    <label for="">Full name:</label>
+                    <input required name="full name" class="input" id="fullName_input" type="text">
+                </span>
+                <span>
+                    <label for="">Phone number:</label>
+                    <input required name="phone number" class="input" id="phoneNumber_input" type="text">
+                </span>
+                <span>
+                    <label for="">Message:</label>
+                    <textarea required name="message" class="input_note" id="note_textarea"></textarea>
+                </span>
+                <span>
+                    <label for="">Email:</label><br>
+                    <input required name="email" class="input" id="email_input" type="email">
+                </span>
+            </div>
+            <button type="submit" id="send_data">SUBMIT</button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

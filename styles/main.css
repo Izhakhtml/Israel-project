@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  grid-area: footer;
+  background: black;
+}
+
+header {
+  border-bottom: 2px solid black;
+  background: wheat;
+  height: 40vh;
+}
+header img {
+  height: 30vh;
+  width: 20vw;
+  position: relative;
+  left: 40%;
+}
+header ul {
+  display: flex;
+  justify-content: space-around;
+}
+header ul li {
+  list-style: none;
+  color: black;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: xx-large;
+}
+header ul li a {
+  -webkit-text-decoration: black;
+          text-decoration: black;
+  color: black;
+}
+
+body {
+  background: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.warp_images {
+  display: inline-flex;
+  background: rgb(74, 72, 72);
+  border: 2px solid black;
+  position: relative;
+  width: 96%;
+  left: 2vw;
+}
+
+#warp_images_three {
+  margin: 15px;
+}
+
+.images_one {
+  width: 32.7vw;
+  height: 45vh;
+  margin: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+a span {
+  position: absolute;
+  top: 40%;
+  margin-left: 10%;
+  color: white;
+  transition: 1s;
+}
+
+.images_one:hover {
+  opacity: 0.3;
+}
+
+a:hover span {
+  display: block;
+  font-size: larger;
+}
+
+a:hover {
+  background: rgb(42, 41, 41);
+}
+
+.images_one:nth-child(5) {
+  display: none;
+}
+
+#btn_right {
+  position: absolute;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+  border: transparent solid 2px;
+  width: 100px;
+  transition: 0.5s;
+}
+
+#btn_right:hover {
+  opacity: 0.2;
+  font-size: 80px;
+  color: white;
+  background: black;
+}
+
+#btn_left {
+  position: absolute;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+  border: transparent solid 2px;
+  width: 100px;
+  transition: 0.5s;
+  left: 91.8%;
+}
+
+#btn_left:hover {
+  opacity: 0.2;
+  font-size: 80px;
+  color: white;
+  background: black;
+}
+
+#warp_article {
+  margin-bottom: 30px;
+}
+
+.warp_images_second {
+  display: inline-flex;
+  background: rgb(74, 72, 72);
+  border: 2px solid black;
+  position: relative;
+  width: 96%;
+  left: 2vw;
+}
+
+.images_two {
+  width: 32.7vw;
+  height: 45vh;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.images_two:nth-child(5) {
+  display: none;
+}
+
+#btn_right_seconed {
+  position: absolute;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+  border: transparent solid 2px;
+  width: 100px;
+  transition: 0.5s;
+}
+
+#btn_right_seconed:hover {
+  opacity: 0.2;
+  font-size: 80px;
+  color: white;
+  background: black;
+}
+
+#btn_left_seconed {
+  position: absolute;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+  border: transparent solid 2px;
+  width: 100px;
+  transition: 0.5s;
+  left: 91.8%;
+}
+
+#btn_left_seconed:hover {
+  opacity: 0.2;
+  font-size: 80px;
+  color: white;
+  background: black;
+}
+
+#warp_article_second {
+  margin-bottom: 30px;
+}
+
+.warp_images_three {
+  display: inline-flex;
+  background: rgb(74, 72, 72);
+  border: 2px solid black;
+  position: relative;
+  width: 96%;
+  left: 2vw;
+}
+
+.images_three {
+  width: 32.7vw;
+  height: 45vh;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.images_three:nth-child(5) {
+  display: none;
+}
+
+#btn_right_three {
+  position: absolute;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+  border: transparent solid 2px;
+  width: 100px;
+  transition: 0.5s;
+}
+
+#btn_right_three:hover {
+  opacity: 0.2;
+  font-size: 80px;
+  color: white;
+  background: black;
+}
+
+#btn_left_three {
+  position: absolute;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+  border: transparent solid 2px;
+  width: 100px;
+  transition: 0.5s;
+  left: 91.8%;
+}
+
+#btn_left_three:hover {
+  opacity: 0.2;
+  font-size: 80px;
+  color: white;
+  background: black;
+}
+
+#warp_article_three {
+  margin-bottom: 30px;
+}
+
+.form_details {
+  width: 40vw;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.contain_label_input {
+  width: 36vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+span {
+  width: 15vw;
+}
+
+button {
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+  border-bottom: 1px solid black;
+  margin-left: 80px;
+  margin-right: 80px;
+  font-weight: lighter;
+}
+
+.input_note {
+  width: 14.2vw;
+  height: 20vh;
+  resize: none;
+}
+
+.input {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 1400px) {
+  #btn_left {
+    position: absolute;
+    height: 100%;
+    background: transparent;
+    color: transparent;
+    border: transparent solid 2px;
+    width: 100px;
+    transition: 0.5s;
+    left: 92.4%;
+  }
+}/*# sourceMappingURL=main.css.map */
