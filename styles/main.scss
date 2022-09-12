@@ -5,6 +5,7 @@
 
 @import './footer';
 @import './header';
+@import './form';
 
 @mixin articleStyle {
     display: inline-flex;
@@ -13,13 +14,16 @@
     position: relative;
     width: 96%;
     left: 2vw;
+    height: 47vh;
 }
 
 @mixin imagesStyle {
-    width: 32.7vw;
+    width: 30.8vw;
     height: 45vh;
     margin: 5px;
     border-radius: 10px;
+    transition: 1s;
+
 }
 
 @mixin btnHoverStyle {
@@ -31,20 +35,24 @@
 
 @mixin btnStyle {
     position: absolute;
-    height: 100%;
+    z-index: 1;
+    height: 47.5vh;
+    left: 2%;
     background: transparent;
     color: transparent;
     border: transparent solid 2px;
     width: 100px;
-    transition: 0.5s;
-}
-
-body {
-    background: white;
+    transition: 0.3s;
 }
 
 h1 {
     text-align: center;
+    font-weight: lighter;
+    border-bottom: 2px solid black;
+    margin: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-family: 'Courier New', Courier, monospace
 }
 
 // ! one
@@ -52,40 +60,30 @@ h1 {
     @include articleStyle();
 }
 
-#warp_images_three {
-    margin: 15px;
-}
-
-.images_one {
+.imagesRow_first {
     @include imagesStyle();
-    transition: 1s;
 }
 
 a span {
-    // display: none;
     position: absolute;
     top: 40%;
+    color: transparent;
     margin-left: 10%;
-    color: white;
-    transition: 1s;
+    display: none;
+    direction: rtl;
+    width: 15vw;
 }
 
-.images_one:hover {
-    opacity: 0.3;
+.imagesRow_first:hover {
+    opacity: 0.1;
 }
 
 a:hover span {
     display: block;
-    font-size: larger;
-    // box-shadow:100 10px 18px 18px #535252;
-
+    color: white;
 }
 
-a:hover {
-    background: rgb(42, 41, 41);
-}
-
-.images_one:nth-child(5) {
+.a_firstImagesRow:nth-child(4) {
     display: none;
 }
 
@@ -96,7 +94,6 @@ a:hover {
 #btn_right:hover {
     @include btnHoverStyle()
 }
-
 #btn_left {
     @include btnStyle();
     left: 91.8%;
@@ -108,6 +105,16 @@ a:hover {
 
 #warp_article {
     margin-bottom: 30px;
+
+}
+
+#show_more {
+    display: none;
+}
+
+#rangeOfImage {
+    text-align: center;
+    font-size: 14px;
 }
 
 // ! second
@@ -115,11 +122,15 @@ a:hover {
     @include articleStyle()
 }
 
-.images_two {
+.imagesRow_seconed {
     @include imagesStyle()
 }
 
-.images_two:nth-child(5) {
+.imagesRow_seconed:hover {
+    opacity: 0.1;
+}
+
+.a_secondImagesRow:nth-child(4) {
     display: none;
 }
 
@@ -133,7 +144,6 @@ a:hover {
 
 #btn_left_seconed {
     @include btnStyle();
-    // left: 94.3%;
     left: 91.8%;
 }
 
@@ -146,16 +156,29 @@ a:hover {
 
 }
 
+#show_more_2 {
+    display: none;
+}
+
+#rangeOfImage_second {
+    text-align: center;
+    font-size: 14px;
+}
+
 // ! trhee
 .warp_images_three {
     @include articleStyle()
 }
 
-.images_three {
+.imagesRow_three {
     @include imagesStyle()
 }
 
-.images_three:nth-child(5) {
+.imagesRow_three:hover {
+    opacity: 0.1;
+}
+
+.a_threeImagesRow:nth-child(4) {
     display: none;
 }
 
@@ -169,7 +192,6 @@ a:hover {
 
 #btn_left_three {
     @include btnStyle();
-    // left: 94.3%;
     left: 91.8%;
 
 }
@@ -182,55 +204,165 @@ a:hover {
     margin-bottom: 30px;
 }
 
-//! form
-.form_details {
-    width: 40vw;
+#show_more_3 {
+    display: none;
+}
+
+#rangeOfImage_three {
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
 
 }
 
-.contain_label_input {
-    width: 36vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 15px;
-}
-
-span {
-    width: 15vw;
-}
-
-button {
-    padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
-
-}
-
-h2 {
-    border-bottom: 1px solid black;
-    margin-left: 80px;
-    margin-right: 80px;
-    font-weight: lighter;
-}
-
-.input_note {
-    width: 14.2vw;
-    height: 20vh;
-    resize: none;
-
-}
-
-.input {
-    padding: 10px;
-}
-
-
-
-@media only screen and (min-width:1400px) {
+@media only screen and (min-width:768px) and (max-width:800px) {
     #btn_left {
-        @include btnStyle();
-        left: 92.4%;
+        left: 86.5%;
+    }
+
+    #btn_left_seconed {
+        left: 86.5%;
+    }
+
+    #btn_left_three {
+        left: 86.5%;
+    }
+
+    a span {
+        top: 10%;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width:430px) {
+    a span {
+        top: initial;
+        color: black;
+        width: 46vh;
+        font-size: medium;
+        margin-top: 26%;
+        left: 5%;
+        font-weight: bold;
+    }
+
+    //! buttons
+    #btn_left {
+        display: none;
+    }
+
+    #btn_left_seconed {
+        display: none;
+    }
+
+    #btn_left_three {
+        display: none;
+    }
+
+    #btn_right {
+        display: none;
+
+    }
+
+    #btn_right_seconed {
+        display: none;
+
+    }
+
+    #btn_right_seconed {
+        display: none;
+
+    }
+
+    //! warp images
+    .warp_images {
+        display: inline-block;
+        background: white;
+        border: none;
+        height: 130vh;
+    }
+
+    .warp_images_second {
+        display: inline-block;
+        background: white;
+        border: none;
+        height: 130vh;
+    }
+
+    .warp_images_three {
+        display: inline-block;
+        background: white;
+        border: none;
+        height: 130vh;
+
+    }
+
+    //! images
+    .imagesRow_first {
+        width: 90%;
+        left: 3%;
+        position: relative;
+    }
+
+    .imagesRow_seconed {
+        width: 90%;
+        left: 3%;
+        position: relative;
+    }
+
+    .imagesRow_three {
+        width: 90%;
+        position: relative;
+        left: 5vw;
+    }
+
+    #show_more {
+        display: block;
+        border-bottom: 1px dotted black;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #show_more_2 {
+        display: block;
+        border-bottom: 1px dotted black;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #show_more_3 {
+        display: block;
+        border-bottom: 1px dotted black;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 2685px) and (max-width:3000px) {
+    .imagesRow_first {
+        width: 31.6vw;
+    }
+
+    #btn_left {
+        left: 96%;
+    }
+
+    .imagesRow_seconed {
+        width: 31.6vw;
+    }
+
+    #btn_left_seconed {
+        left: 96%;
+
+    }
+
+    .imagesRow_three {
+        width: 31.6vw;
+    }
+
+    #btn_left_three {
+        left: 96%;
+
     }
 }
