@@ -8,16 +8,15 @@ footer {
 }
 footer h4 {
   color: white;
-  height: 20vh;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
 }
 footer #backToUp {
-  background: black;
+  background: rgb(74, 72, 72);
   border-radius: 50%;
   bottom: 20px;
   box-shadow: 0 2px 5px 0rgba 0, 0, 0, 0.26;
-  color: white;
+  color: black;
   cursor: pointer;
   display: block;
   height: 50px;
@@ -95,7 +94,7 @@ h2 {
   border-bottom: 1px solid black;
   margin-left: 80px;
   margin-right: 80px;
-  font-weight: bolder;
+  font-weight: lighter;
 }
 
 label {

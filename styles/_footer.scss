@@ -2,17 +2,19 @@ footer {
     background:  rgb(74, 72, 72);
     h4 {
         color:white;
-        height: 20vh;
+        // height: 20vh;
         font-family:'Courier New', Courier, monospace;
         text-align: center;
     }
 
     #backToUp {
-        background: black;
+        // background: rgb(132, 128, 128);
+    background:  rgb(74, 72, 72);
+
         border-radius: 50%;
         bottom: 20px;
         box-shadow: 0 2px 5px 0rgba(0, 0, 0, .26);
-        color: white;
+        color: black;
         cursor: pointer;
         display: block;
         height: 50px;
