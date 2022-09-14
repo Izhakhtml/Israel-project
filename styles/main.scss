@@ -49,7 +49,7 @@ h1 {
     text-align: center;
     font-weight: lighter;
     border-bottom: 2px solid black;
-    margin: 2%;
+    margin: 2px;
     margin-left: 30%;
     margin-right: 30%;
     font-family: 'Courier New', Courier, monospace;
@@ -105,7 +105,7 @@ a:hover span {
 }
 
 #warp_article {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 
 }
 
@@ -153,7 +153,7 @@ a:hover span {
 }
 
 #warp_article_second {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 
 }
 
@@ -202,7 +202,7 @@ a:hover span {
 }
 
 #warp_article_three {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 }
 
 #show_more_3 {
@@ -320,7 +320,15 @@ a:hover span {
         margin-left: 20px;
         margin-right: 20px;
     }
-
+    #rangeOfImage{
+        display: none;
+    }
+    #rangeOfImage_second{
+        display: none;
+    }
+    #rangeOfImage_three{
+        display: none;
+    }
 }
 @media only screen and (min-width:768px) and (max-width:800px) {
     #btn_left {
