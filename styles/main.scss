@@ -70,8 +70,8 @@ a span {
     color: transparent;
     margin-left: 10%;
     display: none;
-    direction: rtl;
     width: 15vw;
+    direction: rtl;
 }
 
 .imagesRow_first:hover {
@@ -94,6 +94,7 @@ a:hover span {
 #btn_right:hover {
     @include btnHoverStyle()
 }
+
 #btn_left {
     @include btnStyle();
     left: 91.8%;
@@ -233,14 +234,15 @@ a:hover span {
 }
 
 @media only screen and (min-width: 300px) and (max-width:430px) {
-    a span {
+    a:hover span {
         top: initial;
         color: black;
-        width: 46vh;
+        width: 57vh;
         font-size: medium;
-        margin-top: 26%;
-        left: 5%;
+        margin-top: 18%;
+        left: 10%;
         font-weight: bold;
+        text-align: center;
     }
 
     //! buttons
