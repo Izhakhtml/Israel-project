@@ -398,9 +398,8 @@ a:hover span {
     color: black;
     width: 57%;
     font-size: medium;
-    margin-top: 18%;
-    left: 6%;
-    font-weight: bold;
+    margin-top: 13vh;
+    margin-left: 20vw;
     text-align: center;
   }
   #btn_left {

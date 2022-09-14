@@ -215,14 +215,16 @@ a:hover span {
 
 }
 @media only screen and (min-width: 300px) and (max-width:500px) {
+
     a:hover span {
         top: initial;
         color: black;
         width: 57%;
         font-size: medium;
-        margin-top: 18%;
-        left: 6%;
-        font-weight: bold;
+        margin-top: 13vh;
+        // left: 6%;
+        margin-left: 20vw;
+        // font-weight: bold;
         text-align: center;
     }
 
