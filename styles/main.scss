@@ -214,33 +214,14 @@ a:hover span {
     font-size: 14px;
 
 }
-
-@media only screen and (min-width:768px) and (max-width:800px) {
-    #btn_left {
-        left: 86.5%;
-    }
-
-    #btn_left_seconed {
-        left: 86.5%;
-    }
-
-    #btn_left_three {
-        left: 86.5%;
-    }
-
-    a span {
-        top: 10%;
-    }
-}
-
-@media only screen and (min-width: 300px) and (max-width:430px) {
+@media only screen and (min-width: 300px) and (max-width:500px) {
     a:hover span {
         top: initial;
         color: black;
         width: 57vh;
         font-size: medium;
         margin-top: 18%;
-        left: 10%;
+        left: 6%;
         font-weight: bold;
         text-align: center;
     }
@@ -250,7 +231,16 @@ a:hover span {
         display: none;
     }
 
+    #btn_right {
+        display: none;
+
+    }
+
     #btn_left_seconed {
+        display: none;
+    }
+
+    #btn_right_seconed {
         display: none;
     }
 
@@ -258,17 +248,7 @@ a:hover span {
         display: none;
     }
 
-    #btn_right {
-        display: none;
-
-    }
-
-    #btn_right_seconed {
-        display: none;
-
-    }
-
-    #btn_right_seconed {
+    #btn_right_three {
         display: none;
 
     }
@@ -340,7 +320,23 @@ a:hover span {
     }
 
 }
+@media only screen and (min-width:768px) and (max-width:800px) {
+    #btn_left {
+        left: 86.5%;
+    }
 
+    #btn_left_seconed {
+        left: 86.5%;
+    }
+
+    #btn_left_three {
+        left: 86.5%;
+    }
+
+    a span {
+        top: 10%;
+    }
+}
 @media only screen and (min-width: 2685px) and (max-width:3000px) {
     .imagesRow_first {
         width: 31.6vw;
